@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/psychologists-services/static/css/main.a0625f2c.css",
-    "main.js": "/psychologists-services/static/js/main.6eea8476.js",
+    "main.css": "/psychologists-services/static/css/main.7a0e732c.css",
+    "main.js": "/psychologists-services/static/js/main.a90b59b7.js",
+    "static/js/983.ad122f9a.chunk.js": "/psychologists-services/static/js/983.ad122f9a.chunk.js",
+    "static/js/908.f36e42ab.chunk.js": "/psychologists-services/static/js/908.f36e42ab.chunk.js",
+    "static/js/697.8027a46c.chunk.js": "/psychologists-services/static/js/697.8027a46c.chunk.js",
+    "static/js/520.b945eee1.chunk.js": "/psychologists-services/static/js/520.b945eee1.chunk.js",
+    "static/media/Inter-Bold.ttf": "/psychologists-services/static/media/Inter-Bold.0eaf807b1cf0eceabe0f.ttf",
+    "static/media/Inter-SemiBold.ttf": "/psychologists-services/static/media/Inter-SemiBold.6058d3da655fb35169c2.ttf",
+    "static/media/Inter-Medium.ttf": "/psychologists-services/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
+    "static/media/Inter-Regular.ttf": "/psychologists-services/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
     "index.html": "/psychologists-services/index.html",
-    "main.a0625f2c.css.map": "/psychologists-services/static/css/main.a0625f2c.css.map",
-    "main.6eea8476.js.map": "/psychologists-services/static/js/main.6eea8476.js.map"
+    "main.7a0e732c.css.map": "/psychologists-services/static/css/main.7a0e732c.css.map",
+    "main.a90b59b7.js.map": "/psychologists-services/static/js/main.a90b59b7.js.map",
+    "983.ad122f9a.chunk.js.map": "/psychologists-services/static/js/983.ad122f9a.chunk.js.map",
+    "908.f36e42ab.chunk.js.map": "/psychologists-services/static/js/908.f36e42ab.chunk.js.map",
+    "697.8027a46c.chunk.js.map": "/psychologists-services/static/js/697.8027a46c.chunk.js.map",
+    "520.b945eee1.chunk.js.map": "/psychologists-services/static/js/520.b945eee1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0625f2c.css",
-    "static/js/main.6eea8476.js"
+    "static/css/main.7a0e732c.css",
+    "static/js/main.a90b59b7.js"
   ]
 }

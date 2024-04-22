@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpsychologists_services=self.webpackChunkpsychologists_services||[]).push([[983],{983:function(s,e,c){c.r(e);var i=c(184);e.default=function(){return(0,i.jsx)("div",{children:"Home Page"})}}}]);
+//# sourceMappingURL=983.ad122f9a.chunk.js.map
