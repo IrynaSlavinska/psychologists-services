@@ -68,12 +68,11 @@ export const StyledNav = styled(NavLink)`
 `;
 
 export const Main = styled.main`
-  padding-top: 50px;
+  padding-top: 72px;
 `;
 
 export const Container = styled.div`
   width: 100%;
-  padding: 0 16px 20px 16px;
   margin: 0 auto;
 
   @media screen and (min-width: 375px) {
@@ -86,6 +85,5 @@ export const Container = styled.div`
 
   @media screen and (min-width: 1440px) {
     max-width: 1400px;
-    padding: 32px 20px;
   }
 `;
