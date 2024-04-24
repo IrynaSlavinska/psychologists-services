@@ -29,6 +29,11 @@ const HomeContent = () => {
           width={464}
           height={526}
         />
+        <div>
+          <span>check icon</span>
+          <p>Experienced psychologists</p>
+          <p>15,000</p>
+        </div>
       </div>
     </HomeContainer>
   );
