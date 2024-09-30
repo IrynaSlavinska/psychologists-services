@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'modern-normalize';
+import GlobalStyles from 'assets/styles/GlobalStyles';
+import { BrowserRouter } from 'react-router-dom';
 import { App } from 'components/App';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <BrowserRouter basename="/psychologists-services"> */}
-    <App />
-    {/* </BrowserRouter> */}
+    <BrowserRouter basename="/psychologists-services">
+      <GlobalStyles />
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
