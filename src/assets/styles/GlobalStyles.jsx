@@ -6,21 +6,9 @@ const GlobalStyles = createGlobalStyle`
 --modal-color: #fbfbfb;
 --body-color: #f3f3f3;
 --text-color: #191A15;
-
-}
-
-html[data-theme='green']{
- 
-}
-
-html[data-theme='blue']{
- 
-}
-
-
-
-html[data-theme='orange']{
-
+--light-text: #191A154D;
+--accent-color: #FC832C;
+--light-accent: #FC832C33;
 }
 
 *,
