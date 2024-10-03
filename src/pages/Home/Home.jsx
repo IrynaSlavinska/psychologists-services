@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ImageHomeNormScreen from 'assets/images/psy-home-1x.jpg';
 import ImageHomeRetinaScreen from 'assets/images/psy-home-2x.jpg';
 import icons from 'assets/icons/psy-icons.svg';
@@ -16,6 +18,18 @@ import {
 } from './Home.styled';
 
 const HomePage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      document.body.style.background =
+        'linear-gradient(to right bottom, #fbfbfb 30%, #FC832C33 100%)';
+    }
+    return () => {
+      document.body.style.backgroundColor = '';
+    };
+  }, [location]);
+
   return (
     <HomeContainer>
       <div>
