@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './Layout/Layout';
-import HomePage from 'pages/Home';
+import HomePage from 'pages/Home/Home';
 import PsychologistsPage from 'pages/Psychologists';
 import FavoritePage from 'pages/Favorite';
 
