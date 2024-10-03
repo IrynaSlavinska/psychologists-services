@@ -26,7 +26,7 @@ const HomePage = () => {
         'linear-gradient(to right bottom, #fbfbfb 30%, #FC832C33 100%)';
     }
     return () => {
-      document.body.style.backgroundColor = '';
+      document.body.style.background = '';
     };
   }, [location]);
 
