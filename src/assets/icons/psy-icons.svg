@@ -10,6 +10,9 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4" d="M15.999 29.333c7.364 0 13.333-5.969 13.333-13.333S23.362 2.667 15.999 2.667C8.635 2.667 2.666 8.637 2.666 16s5.97 13.333 13.333 13.333z"/>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4" d="M16 8v8l5.333 2.667"/>
 </symbol>
+<symbol id="icon-check" viewBox="0 0 40 32">
+<path d="M5 11l-5 5 15 15 25-25-5-5-20 20-10-10z"></path>
+</symbol>
 <symbol id="icon-close" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" d="M24 8 8 24M8 8l16 16"/>
 </symbol>
