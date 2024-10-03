@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
 :root {
 --easedTransition: 350ms ease-in-out;
---modal-color: #fbfbfb;
+--white-color: #fbfbfb;
 --body-color: #f3f3f3;
 --text-color: #191A15;
 --light-text: #191A154D;
