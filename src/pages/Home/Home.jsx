@@ -2,7 +2,18 @@ import ImageHomeNormScreen from 'assets/images/psy-home-1x.jpg';
 import ImageHomeRetinaScreen from 'assets/images/psy-home-2x.jpg';
 import icons from 'assets/icons/psy-icons.svg';
 
-import { HomeContainer, HomeTitle, HomeText } from './Home.styled';
+import {
+  HomeContainer,
+  HomeTitle,
+  HomeText,
+  ParentBlock,
+  InfoContainer,
+  CheckIcon,
+  FirstString,
+  SecondString,
+  QuestionIcon,
+  DuoPersIcon,
+} from './Home.styled';
 
 const HomePage = () => {
   return (
@@ -16,7 +27,7 @@ const HomePage = () => {
           guide in your own life with the help of our experienced psychologists.
         </HomeText>
       </div>
-      <div>
+      <ParentBlock>
         <img
           srcSet={`${ImageHomeNormScreen} 1x, ${ImageHomeRetinaScreen} 2x`}
           src={ImageHomeNormScreen}
@@ -24,20 +35,22 @@ const HomePage = () => {
           width={464}
           height={526}
         />
-        <div>
-          <svg width="20" height="15">
+        <InfoContainer>
+          <CheckIcon width="20" height="15">
             <use href={`${icons}#icon-check`}></use>
-          </svg>
-          <p>Experienced psychologists</p>
-          <p>15,000</p>
-        </div>
-        <svg width="20" height="20">
+          </CheckIcon>
+          <div>
+            <FirstString>Experienced psychologists</FirstString>
+            <SecondString>15,000</SecondString>
+          </div>
+        </InfoContainer>
+        <DuoPersIcon width="20" height="20">
           <use href={`${icons}#icon-duo`}></use>
-        </svg>
-        <svg width="15" height="20">
+        </DuoPersIcon>
+        <QuestionIcon width="15" height="20">
           <use href={`${icons}#icon-question`}></use>
-        </svg>
-      </div>
+        </QuestionIcon>
+      </ParentBlock>
     </HomeContainer>
   );
 };
