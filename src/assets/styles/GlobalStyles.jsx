@@ -6,9 +6,10 @@ const GlobalStyles = createGlobalStyle`
 --white-color: #fbfbfb;
 --body-color: #f3f3f3;
 --text-color: #191A15;
---light-text: #191A154D;
 --accent-color: #FC832C;
 --light-accent: #FC832C33;
+--yellow-color: #ffc531;
+--green-color:  #54BE96;
 }
 
 *,
@@ -55,7 +56,8 @@ a {
 button {
   font-family: inherit;
   border: none;
-  cursor: pointer;
+  background-color: transparent;
+  cursor: pointer;padding: 0;
 }
 
 input {
@@ -71,6 +73,20 @@ img {
   max-width: 100%;
   height: auto;
   border: none;
+}
+
+ ::-webkit-scrollbar {
+  width: 7px;
+} 
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--white-color);
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--light-accent);
+   color: rgba(255, 255, 255, 0.4);
 }
 `;
 
