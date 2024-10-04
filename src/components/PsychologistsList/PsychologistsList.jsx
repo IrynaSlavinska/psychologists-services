@@ -1,13 +1,14 @@
 import psychologists from 'data/psychologists.json';
 import PsychologistsItem from 'components/PsychologistsItem/PsychologistsItem';
+import { PsyList } from './PsychologistsList.styled';
 
 const PsychologistsList = () => {
   return (
-    <ul>
+    <PsyList>
       {psychologists.map(psychologist => {
         return <PsychologistsItem psychologist={psychologist} />;
       })}
-    </ul>
+    </PsyList>
   );
 };
 
