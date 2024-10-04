@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import HomePage from 'pages/Home/Home';
-import PsychologistsPage from 'pages/Psychologists';
-import FavoritePage from 'pages/Favorite';
+import PsychologistsPage from 'pages/Psychologists/Psychologists';
+import FavoritePage from 'pages/Favorite/Favorite';
 
 export const App = () => {
   return (
