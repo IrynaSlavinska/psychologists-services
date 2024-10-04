@@ -3,6 +3,7 @@ import { Suspense } from 'react';
 
 import {
   Header,
+  LogoText,
   NavList,
   NavItem,
   StyledNav,
@@ -14,10 +15,10 @@ const Layout = () => {
   return (
     <>
       <Header>
-        <StyledNav to="/" style={{ fontWeight: 700 }}>
+        <LogoText>
           <span>psychologists.</span>
           services
-        </StyledNav>
+        </LogoText>
         <NavList>
           <NavItem>
             <StyledNav to="/">Home</StyledNav>
