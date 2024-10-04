@@ -5,7 +5,7 @@ export const HomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 125px;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 108px);
 `;
 
 export const HomeTitle = styled.h1`
