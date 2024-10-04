@@ -76,7 +76,7 @@ export const QuestionIcon = styled.svg`
   border-radius: 10px;
   transform: rotate(-15deg);
   fill: var(--white-color);
-  background: #54be96;
+  background: var(--green-color);
 `;
 
 export const DuoPersIcon = styled.svg`
@@ -89,5 +89,5 @@ export const DuoPersIcon = styled.svg`
   border-radius: 10px;
   transform: rotate(15deg);
   fill: var(--white-color);
-  background: #fbc75e;
+  background: var(--yellow-color);
 `;
