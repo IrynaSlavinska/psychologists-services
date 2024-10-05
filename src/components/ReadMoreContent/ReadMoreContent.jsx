@@ -1,28 +1,38 @@
 import icons from 'assets/icons/psy-icons.svg';
+import {
+  ReviewsList,
+  ReviewerDataContainer,
+  ReviewerLetter,
+  ReviewerName,
+  ReviewerRating,
+  ReviewerComment,
+  AppointmentButton,
+} from './ReadMoreContent.styled';
 
 const ReadMoreContent = ({ reviews }) => {
   return (
-    <ul>
-      {reviews.map(({ reviewer, rating, comment }) => {
-        return (
-          <li>
-            <div>
-              <span>{reviewer.slice(0, 1)}</span>
+    <>
+      <ReviewsList>
+        {reviews.map(({ reviewer, rating, comment }) => (
+          <li key={reviewer}>
+            <ReviewerDataContainer>
+              <ReviewerLetter>{reviewer.slice(0, 1)}</ReviewerLetter>
               <div>
-                <p>{reviewer}</p>
-                <p>
+                <ReviewerName>{reviewer}</ReviewerName>
+                <ReviewerRating>
                   <svg width="20" height="20">
                     <use href={`${icons}#icon-star`}></use>
                   </svg>
                   {rating}
-                </p>
+                </ReviewerRating>
               </div>
-            </div>
-            <p>{comment}</p>
+            </ReviewerDataContainer>
+            <ReviewerComment>{comment}</ReviewerComment>
           </li>
-        );
-      })}
-    </ul>
+        ))}
+      </ReviewsList>
+      <AppointmentButton type="button">Make an appointment</AppointmentButton>
+    </>
   );
 };
 

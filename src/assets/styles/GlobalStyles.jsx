@@ -10,6 +10,8 @@ const GlobalStyles = createGlobalStyle`
 --light-accent: #FC832C33;
 --yellow-color: #ffc531;
 --green-color:  #54BE96;
+--hover-color: #F37113;
+
 }
 
 *,
