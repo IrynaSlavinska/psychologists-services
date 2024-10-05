@@ -1,4 +1,5 @@
 import icons from 'assets/icons/psy-icons.svg';
+import ReadMoreContent from 'components/ReadMoreContent/ReadMoreContent';
 import {
   PsyItem,
   PsyPhotoContainer,
@@ -12,8 +13,15 @@ import {
   PsyAboutText,
   ReadMoreButton,
 } from './PsychologistsItem.styled';
+import { useState } from 'react';
 
 const PsychologistsItem = ({ psychologist }) => {
+  const [showReadMore, setShowReadMore] = useState(false);
+
+  const handleClick = () => {
+    setShowReadMore(true);
+  };
+
   return (
     <PsyItem key={psychologist.name}>
       <PsyPhotoContainer>
@@ -71,7 +79,14 @@ const PsychologistsItem = ({ psychologist }) => {
           </li>
         </ListInfo>
         <PsyAboutText>{psychologist.about}</PsyAboutText>
-        <ReadMoreButton type="button">Read more</ReadMoreButton>
+
+        {!showReadMore && (
+          <ReadMoreButton type="button" onClick={handleClick}>
+            Read more
+          </ReadMoreButton>
+        )}
+
+        {showReadMore && <ReadMoreContent reviews={psychologist.reviews} />}
       </div>
     </PsyItem>
   );
