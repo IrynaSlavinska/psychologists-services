@@ -6,7 +6,7 @@ export const Header = styled.header`
   margin: 0 auto;
   padding: 24px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #191a151a;
 `;
@@ -55,4 +55,31 @@ export const Container = styled.div`
   max-width: 1184px;
   margin: 0 auto;
   padding: 16px;
+`;
+
+export const ButtonsList = styled.ul`
+  display: flex;
+  gap: 8px;
+  align-content: ;
+`;
+
+export const LogButton = styled.button`
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  padding: 14px 39px;
+  border-radius: 30px;
+  border: 1px solid #191a1533;
+`;
+
+export const RegButton = styled.button`
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  padding: 14px 39px;
+  border-radius: 30px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
 `;

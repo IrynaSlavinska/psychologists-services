@@ -9,6 +9,9 @@ import {
   StyledNav,
   Main,
   Container,
+  ButtonsList,
+  LogButton,
+  RegButton,
 } from './Layout.styled';
 
 const Layout = () => {
@@ -30,14 +33,14 @@ const Layout = () => {
             <StyledNav to="/favorites">Favorites</StyledNav>
           </NavItem>
         </NavList>
-        <NavList>
+        <ButtonsList>
           <li>
-            <button type="button">Log In</button>
+            <LogButton type="button">Log In</LogButton>
           </li>
           <li>
-            <button type="button">Registration</button>
+            <RegButton type="button">Registration</RegButton>
           </li>
-        </NavList>
+        </ButtonsList>
       </Header>
       <Main>
         <Container>
