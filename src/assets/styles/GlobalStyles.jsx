@@ -11,7 +11,6 @@ const GlobalStyles = createGlobalStyle`
 --yellow-color: #ffc531;
 --green-color:  #54BE96;
 --hover-color: #F37113;
-
 }
 
 *,

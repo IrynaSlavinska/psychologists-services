@@ -60,7 +60,6 @@ export const Container = styled.div`
 export const ButtonsList = styled.ul`
   display: flex;
   gap: 8px;
-  align-content: ;
 `;
 
 export const LogButton = styled.button`
@@ -71,6 +70,14 @@ export const LogButton = styled.button`
   padding: 14px 39px;
   border-radius: 30px;
   border: 1px solid #191a1533;
+  transition: background-color var(--easedTransition),
+    border-color var(--easedTransition), color var(--easedTransition);
+
+  &:hover {
+    background-color: var(--hover-color);
+    border-color: transparent;
+    color: var(--white-color);
+  }
 `;
 
 export const RegButton = styled.button`
@@ -82,4 +89,9 @@ export const RegButton = styled.button`
   border-radius: 30px;
   color: var(--white-color);
   background-color: var(--accent-color);
+  transition: background-color var(--easedTransition);
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
 `;
