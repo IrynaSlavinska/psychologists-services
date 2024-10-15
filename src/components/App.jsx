@@ -3,6 +3,7 @@ import Layout from './Layout/Layout';
 import HomePage from 'pages/Home/Home';
 import PsychologistsPage from 'pages/Psychologists/Psychologists';
 import FavoritePage from 'pages/Favorite/Favorite';
+import NotFoundPage from 'pages/NotFoundPage/NotFoundPage';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
         <Route index element={<HomePage />} />
         <Route path="psychologists" element={<PsychologistsPage />} />
         <Route path="favorites" element={<FavoritePage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   );
