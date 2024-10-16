@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import ImageHomeNormScreen from 'assets/images/psy-home-1x.jpg';
 import ImageHomeRetinaScreen from 'assets/images/psy-home-2x.jpg';
 import icons from 'assets/icons/psy-icons.svg';
-
 import {
   HomeContainer,
   HomeTitle,
@@ -17,7 +16,7 @@ import {
   DuoPersIcon,
 } from './Home.styled';
 
-const HomePage = () => {
+export const HomePage = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -68,5 +67,3 @@ const HomePage = () => {
     </HomeContainer>
   );
 };
-
-export default HomePage;

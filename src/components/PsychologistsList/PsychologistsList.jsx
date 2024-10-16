@@ -1,8 +1,8 @@
 import psychologists from 'data/psychologists.json';
-import PsychologistsItem from 'components/PsychologistsItem/PsychologistsItem';
+import { PsychologistsItem } from 'components/PsychologistsItem';
 import { PsyList } from './PsychologistsList.styled';
 
-const PsychologistsList = () => {
+export const PsychologistsList = () => {
   return (
     <PsyList>
       {psychologists.map(psychologist => {
@@ -11,5 +11,3 @@ const PsychologistsList = () => {
     </PsyList>
   );
 };
-
-export default PsychologistsList;

@@ -9,7 +9,7 @@ import {
   AppointmentButton,
 } from './ReadMoreContent.styled';
 
-const ReadMoreContent = ({ reviews }) => {
+export const ReadMoreContent = ({ reviews }) => {
   return (
     <>
       <ReviewsList>
@@ -35,5 +35,3 @@ const ReadMoreContent = ({ reviews }) => {
     </>
   );
 };
-
-export default ReadMoreContent;

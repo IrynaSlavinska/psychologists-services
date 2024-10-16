@@ -1,7 +1,5 @@
-import PsychologistsList from 'components/PsychologistsList/PsychologistsList';
+import { PsychologistsList } from 'components/PsychologistsList';
 
-const PsychologistsPage = () => {
+export const PsychologistsPage = () => {
   return <PsychologistsList />;
 };
-
-export default PsychologistsPage;

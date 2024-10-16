@@ -1,5 +1,5 @@
 import icons from 'assets/icons/psy-icons.svg';
-import ReadMoreContent from 'components/ReadMoreContent/ReadMoreContent';
+import { ReadMoreContent } from 'components/ReadMoreContent';
 import {
   PsyItem,
   PsyPhotoContainer,
@@ -15,7 +15,7 @@ import {
 } from './PsychologistsItem.styled';
 import { useState } from 'react';
 
-const PsychologistsItem = ({ psychologist }) => {
+export const PsychologistsItem = ({ psychologist }) => {
   const [showReadMore, setShowReadMore] = useState(false);
 
   const handleClick = () => {
@@ -91,5 +91,3 @@ const PsychologistsItem = ({ psychologist }) => {
     </PsyItem>
   );
 };
-
-export default PsychologistsItem;

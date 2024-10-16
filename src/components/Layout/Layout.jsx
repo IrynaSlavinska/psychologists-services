@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
-
 import {
   Header,
   LogoText,
@@ -14,7 +13,7 @@ import {
   RegButton,
 } from './Layout.styled';
 
-const Layout = () => {
+export const Layout = () => {
   return (
     <>
       <Header>
@@ -52,5 +51,3 @@ const Layout = () => {
     </>
   );
 };
-
-export default Layout;
