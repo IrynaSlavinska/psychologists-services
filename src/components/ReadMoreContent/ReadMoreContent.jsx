@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import icons from 'assets/icons/psy-icons.svg';
 import {
   ReviewsList,
@@ -8,8 +9,10 @@ import {
   ReviewerComment,
   AppointmentButton,
 } from './ReadMoreContent.styled';
+import { AppointmentModal } from 'components/Modals';
 
-export const ReadMoreContent = ({ reviews }) => {
+export const ReadMoreContent = ({ reviews, avatar, name }) => {
+  const [isAppointOpen, setAppointOpen] = useState(false);
   return (
     <>
       <ReviewsList>
@@ -31,7 +34,18 @@ export const ReadMoreContent = ({ reviews }) => {
           </li>
         ))}
       </ReviewsList>
-      <AppointmentButton type="button">Make an appointment</AppointmentButton>
+      <AppointmentButton type="button" onClick={() => setAppointOpen(true)}>
+        Make an appointment
+      </AppointmentButton>
+
+      <AppointmentModal
+        isOpen={isAppointOpen}
+        onClose={() => {
+          setAppointOpen(false);
+        }}
+        avatar={avatar}
+        name={name}
+      />
     </>
   );
 };

@@ -17,36 +17,43 @@ import { useState } from 'react';
 
 export const PsychologistsItem = ({ psychologist }) => {
   const [showReadMore, setShowReadMore] = useState(false);
+  const {
+    name,
+    avatar_url,
+    rating,
+    price_per_hour,
+    experience,
+    license,
+    specialization,
+    initial_consultation,
+    about,
+    reviews,
+  } = psychologist;
 
   const handleClick = () => {
     setShowReadMore(true);
   };
 
   return (
-    <PsyItem key={psychologist.name}>
+    <PsyItem key={name}>
       <PsyPhotoContainer>
-        <img
-          src={psychologist.avatar_url}
-          alt={psychologist.name}
-          width={96}
-          height={96}
-        />
+        <img src={avatar_url} alt={name} width={96} height={96} />
       </PsyPhotoContainer>
       <div>
         <PsyTopHeadCard>
           <div>
             <PsySpec>Psychologist</PsySpec>
-            <PsyName>{psychologist.name}</PsyName>
+            <PsyName>{name}</PsyName>
           </div>
           <TopInfoContainer>
             <TopRating>
               <svg width="20" height="20">
                 <use href={`${icons}#icon-star`}></use>
               </svg>
-              Rating: {psychologist.rating}
+              Rating: {rating}
             </TopRating>
             <TopPrice>
-              Price / 1 hour: <span>{psychologist.price_per_hour}$</span>
+              Price / 1 hour: <span>{price_per_hour}$</span>
             </TopPrice>
             <button type="button">
               <svg width="15" height="20">
@@ -58,27 +65,26 @@ export const PsychologistsItem = ({ psychologist }) => {
         <ListInfo>
           <li>
             <p>
-              Experience: <span>{psychologist.experience}</span>
+              Experience: <span>{experience}</span>
             </p>
           </li>
           <li>
             <p>
-              License: <span>{psychologist.license}</span>
+              License: <span>{license}</span>
             </p>
           </li>
           <li>
             <p>
-              Specialization: <span>{psychologist.specialization}</span>
+              Specialization: <span>{specialization}</span>
             </p>
           </li>
           <li>
             <p>
-              Initial consultation:{' '}
-              <span>{psychologist.initial_consultation}</span>
+              Initial consultation: <span>{initial_consultation}</span>
             </p>
           </li>
         </ListInfo>
-        <PsyAboutText>{psychologist.about}</PsyAboutText>
+        <PsyAboutText>{about}</PsyAboutText>
 
         {!showReadMore && (
           <ReadMoreButton type="button" onClick={handleClick}>
@@ -86,7 +92,9 @@ export const PsychologistsItem = ({ psychologist }) => {
           </ReadMoreButton>
         )}
 
-        {showReadMore && <ReadMoreContent reviews={psychologist.reviews} />}
+        {showReadMore && (
+          <ReadMoreContent reviews={reviews} avatar={avatar_url} name={name} />
+        )}
       </div>
     </PsyItem>
   );
