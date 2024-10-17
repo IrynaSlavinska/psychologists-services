@@ -7,8 +7,17 @@ import {
   Input,
   SubmitButton,
 } from './ModalWrapper.styled';
+import { Password } from './InputPassword';
 
 export const LoginModal = ({ isOpen, onClose }) => {
+  const handleSubmit = e => {
+    e.preventDefault();
+  };
+
+  const SubmitClick = e => {
+    onClose();
+  };
+
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalTitle>Log In</ModalTitle>
@@ -16,14 +25,14 @@ export const LoginModal = ({ isOpen, onClose }) => {
         Welcome back! Please enter your credentials to access your account and
         continue your search for a psychologist.
       </ModalText>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Label>
           <Input type="email" name="email" placeholder="Email" autoFocus />
         </Label>
-        <Label>
-          <Input type="password" name="password" placeholder="Password" />
-        </Label>
-        <SubmitButton type="submit">Log In</SubmitButton>
+        <Password />
+        <SubmitButton type="submit" onClick={SubmitClick}>
+          Log In
+        </SubmitButton>
       </Form>
     </Modal>
   );
