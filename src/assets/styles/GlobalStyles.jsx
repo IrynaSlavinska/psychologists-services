@@ -11,6 +11,9 @@ const GlobalStyles = createGlobalStyle`
 --yellow-color: #ffc531;
 --green-color:  #54BE96;
 --hover-color: #F37113;
+--modalBackground: #191A1599;
+--light-text: #191A1580;
+--input-border: #191a151a;
 }
 
 *,
