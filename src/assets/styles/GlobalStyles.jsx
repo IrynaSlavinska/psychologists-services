@@ -64,7 +64,7 @@ button {
   cursor: pointer;padding: 0;
 }
 
-input {
+input, textarea {
   font-family: inherit;
 
   &:focus {
