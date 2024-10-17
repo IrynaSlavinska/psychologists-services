@@ -95,3 +95,49 @@ export const SubmitButton = styled.button`
     background-color: var(--hover-color);
   }
 `;
+
+// !
+export const PasswordLabel = styled.label`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--text-color);
+  position: relative;
+`;
+
+export const PassInput = styled.input`
+  font-size: 16px;
+  padding: 16px 18px;
+  padding-right: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--input-border);
+  transition: border-color var(--easedTransition);
+
+  ::placeholder {
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+`;
+
+export const EyeButton = styled.button`
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+`;
