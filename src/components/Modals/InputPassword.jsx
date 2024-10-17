@@ -16,7 +16,7 @@ export const Password = () => {
         type={showPassword ? 'text' : 'password'}
         placeholder="Password"
       />
-      <EyeButton onClick={togglePasswordVisibility}>
+      <EyeButton onClick={togglePasswordVisibility} type="button">
         <svg>
           <use
             xlinkHref={`${icons}#${

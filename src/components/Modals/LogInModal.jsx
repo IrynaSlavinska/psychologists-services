@@ -10,10 +10,6 @@ import {
 import { Password } from './InputPassword';
 
 export const LoginModal = ({ isOpen, onClose }) => {
-  const handleSubmit = e => {
-    e.preventDefault();
-  };
-
   const SubmitClick = e => {
     onClose();
   };
@@ -25,7 +21,7 @@ export const LoginModal = ({ isOpen, onClose }) => {
         Welcome back! Please enter your credentials to access your account and
         continue your search for a psychologist.
       </ModalText>
-      <Form onSubmit={handleSubmit}>
+      <Form>
         <Label>
           <Input type="email" name="email" placeholder="Email" autoFocus />
         </Label>
