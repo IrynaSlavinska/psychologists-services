@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import {
   Header,
   LogoText,
@@ -12,8 +12,11 @@ import {
   LogButton,
   RegButton,
 } from './Layout.styled';
+import { LoginModal } from 'components/Modals/LogInModal';
 
 export const Layout = () => {
+  const [isLoginOpen, setLoginOpen] = useState(false);
+
   return (
     <>
       <Header>
@@ -34,13 +37,18 @@ export const Layout = () => {
         </NavList>
         <ButtonsList>
           <li>
-            <LogButton type="button">Log In</LogButton>
+            <LogButton type="button" onClick={() => setLoginOpen(true)}>
+              Log In
+            </LogButton>
           </li>
           <li>
             <RegButton type="button">Registration</RegButton>
           </li>
         </ButtonsList>
       </Header>
+
+      <LoginModal isOpen={isLoginOpen} onClose={() => setLoginOpen(false)} />
+
       <Main>
         <Container>
           <Suspense fallback={null}>
