@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// ! general styles
 export const ModalBackdrop = styled.div`
   position: fixed;
   top: 0;
@@ -15,7 +16,7 @@ export const ModalContent = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 64px;
+  padding: 40px;
   background-color: var(--white-color);
   color: black;
   width: 566px;
@@ -68,6 +69,7 @@ export const Input = styled.input`
   font-size: 16px;
   padding: 16px 18px;
   border-radius: 12px;
+  width: 100%;
   border: 1px solid var(--input-border);
   transition: border-color var(--easedTransition);
 
@@ -96,7 +98,7 @@ export const SubmitButton = styled.button`
   }
 `;
 
-// !
+// ! styles for password input
 export const PasswordLabel = styled.label`
   display: flex;
   flex-direction: column;
@@ -138,6 +140,65 @@ export const EyeButton = styled.button`
   }
 
   &:focus {
+    outline: none;
+  }
+`;
+
+// ! styles for appoint modal
+export const AppPsyContainer = styled.div`
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 40px;
+
+  p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #8a8a89;
+    margin-bottom: 4px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+`;
+
+export const AppAvatar = styled.img`
+  width: 44px;
+  height: 44px;
+  border-radius: 15px;
+`;
+
+export const FlexContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  label {
+    flex: 1;
+  }
+`;
+
+export const AppTextarea = styled.textarea`
+  font-size: 16px;
+  padding: 16px 18px;
+  padding-right: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--input-border);
+  resize: none;
+  height: 116px;
+  transition: border-color var(--easedTransition);
+
+  ::placeholder {
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  &:focus {
+    border-color: var(--accent-color);
     outline: none;
   }
 `;
