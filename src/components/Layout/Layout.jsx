@@ -12,10 +12,11 @@ import {
   LogButton,
   RegButton,
 } from './Layout.styled';
-import { LoginModal } from 'components/Modals/LogInModal';
+import { LoginModal, RegistrationModal } from 'components/Modals';
 
 export const Layout = () => {
   const [isLoginOpen, setLoginOpen] = useState(false);
+  const [isRegisterOpen, setRegisterOpen] = useState(false);
 
   return (
     <>
@@ -42,12 +43,18 @@ export const Layout = () => {
             </LogButton>
           </li>
           <li>
-            <RegButton type="button">Registration</RegButton>
+            <RegButton type="button" onClick={() => setRegisterOpen(true)}>
+              Registration
+            </RegButton>
           </li>
         </ButtonsList>
       </Header>
 
       <LoginModal isOpen={isLoginOpen} onClose={() => setLoginOpen(false)} />
+      <RegistrationModal
+        isOpen={isRegisterOpen}
+        onClose={() => setRegisterOpen(false)}
+      />
 
       <Main>
         <Container>
