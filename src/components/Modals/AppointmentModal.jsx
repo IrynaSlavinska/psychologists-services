@@ -11,6 +11,8 @@ import {
   AppTextarea,
   FlexContainer,
 } from './ModalWrapper.styled';
+import { CustomDate } from './CustomDate/CustomDate';
+import { CustomTime } from './CustomDate/CustomTime';
 
 export const AppointmentModal = ({ isOpen, onClose, name, avatar }) => {
   const SubmitClick = e => {
@@ -44,12 +46,14 @@ export const AppointmentModal = ({ isOpen, onClose, name, avatar }) => {
           </Label>
         </FlexContainer>
         <FlexContainer>
-          <Label>
+          {/* <Label>
             <Input type="date" name="date" />
-          </Label>
-          <Label>
+          </Label> */}
+          <CustomDate />
+          {/* <Label>
             <Input type="time" name="time" />
-          </Label>
+          </Label> */}
+          <CustomTime type="time" />
         </FlexContainer>
         <Label>
           <Input type="email" name="email" placeholder="Email" />
