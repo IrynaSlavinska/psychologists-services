@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Input } from '../ModalWrapper.styled';
-import css from './styles.css';
+import './styles.css';
 
 export const CustomTime = () => {
   const [startDate, setStartDate] = useState(new Date());
