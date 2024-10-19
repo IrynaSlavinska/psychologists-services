@@ -1,3 +1,4 @@
+import InputMask from 'react-input-mask';
 import { Modal } from './ModalWrapper';
 import {
   ModalTitle,
@@ -42,7 +43,15 @@ export const AppointmentModal = ({ isOpen, onClose, name, avatar }) => {
             <Input type="text" name="name" placeholder="Name" autoFocus />
           </Label>
           <Label>
-            <Input type="tel" name="tel" placeholder="+380" />
+            {/* <Input type="tel" name="tel" placeholder="+380" /> */}
+            <InputMask
+              mask="+380 (99) 999 99 99"
+              placeholder="+380 (__) ___ __ __"
+              alwaysShowMask={true}
+              maskChar="_"
+            >
+              {inputProps => <Input {...inputProps} type="tel" id="phone" />}
+            </InputMask>
           </Label>
         </FlexContainer>
         <FlexContainer>
