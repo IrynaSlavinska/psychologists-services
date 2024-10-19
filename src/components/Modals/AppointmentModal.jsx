@@ -71,7 +71,7 @@ export const AppointmentModal = ({ isOpen, onClose, name, avatar }) => {
           <AppTextarea name="comment" placeholder="Comment" />
         </Label>
         <SubmitButton type="submit" onClick={SubmitClick}>
-          Log In
+          Send
         </SubmitButton>
       </Form>
     </Modal>
