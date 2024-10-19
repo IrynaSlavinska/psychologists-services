@@ -1,0 +1,50 @@
+.custom-select__control {
+    background-color: var(--accent-color);
+    border: none;
+    width: 226px;
+    height: 48px;
+    box-shadow: none;
+    border-radius: 14px;
+    margin-bottom: 32px;
+    padding: 0 18px;
+}
+
+.custom-select__control--is-focused {}
+
+.custom-select__menu {
+    background-color: #ffffff;
+    width: 226px;
+    border-radius: 14px;
+    box-shadow: 0px 20px 69px 0px #00000012;
+    padding: 14px 18px;
+}
+
+.custom-select__option {
+    color: #191A154D;
+    ;
+}
+
+.custom-select__option--is-focused {
+    background-color: var(--light-accent);
+    border-radius: 6px;
+}
+
+.custom-select__option--is-selected {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    color: #ffffff;
+    ;
+}
+
+.custom-select__indicator-separator {
+    display: none;
+}
+
+.custom-select__indicator,
+.custom-select__dropdown-indicator {
+    color: #ffffff;
+}
+
+.custom-select__single-value {
+    color: #ffffff;
+}
