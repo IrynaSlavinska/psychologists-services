@@ -9,8 +9,6 @@
     padding: 0 18px;
 }
 
-.custom-select__control--is-focused {}
-
 .custom-select__menu {
     background-color: #ffffff;
     width: 226px;
